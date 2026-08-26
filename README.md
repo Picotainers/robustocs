@@ -29,5 +29,6 @@ docker run --rm picotainers/robustocs:latest example
 ## Runtime notes
 
 - The image installs `robustocs` into a Python 3.11 virtual environment.
+- NumPy is pinned below 2.0 because the current `robustocs` release is not compatible with NumPy 2.x.
 - The bundled smoke example uses the open-source HiGHS backend.
 - Gurobi-backed functions are present in the package, but they may still require a valid Gurobi license at runtime.
